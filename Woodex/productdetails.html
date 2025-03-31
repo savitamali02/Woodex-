@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <link rel="icon" href="download.jpg">
+</head>
+<body>
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="input-wrapper">
+        <input type="search" name="search" placeholder="Search Anything..." class="input-field">
+        <i class="fa fa-search search-icon"></i>
+      </div>
+
+      <a href="#" class="logo">Woodex</a>
+
+      <div class="header-action">
+
+        <a href="login.html">
+          <button class="header-action-btn" aria-label="user">
+            <i class="fa-regular fa-user"></i>
+          </button>
+        </a>
+        <button class="header-action-btn" aria-label="favorite list">
+          <i class="fa-regular fa-heart"></i>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+        <button class="header-action-btn" aria-label="cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+
+          <span class="btn-badge">0</span>
+        </button>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <i class="fa-solid fa-bars"></i></label>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+  <div class="product-container">
+    
+    <!-- Main Image with Zoom Effect -->
+    <div class="zoom-container">
+      <img id="mainImage" src="./assets/images/product-1.jpg" class="zoom-img" alt="Product Image">
+    </div>
+
+    <!-- Related Images -->
+    <div class="related-images">
+      <img src="./assets/images/product-1.jpg" class="thumbnail" onclick="changeImage(this)">
+      <img src="./assets/images/product-2.jpg" class="thumbnail" onclick="changeImage(this)">
+      <img src="./assets/images/product-3.jpg" class="thumbnail" onclick="changeImage(this)">
+    </div>
+
+    <!-- Add to Cart Button -->
+    <!-- Add to Cart & Remove from Cart Buttons -->
+<button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+<button class="remove-from-cart" onclick="removeFromCart()">Remove from Cart</button>
+
+
+
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
